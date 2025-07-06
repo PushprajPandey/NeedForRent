@@ -1,0 +1,26 @@
+{
+    "name": "velorent",
+    "version": "1.0.0",
+    "description": "Car rental application",
+    "main": "index.js",
+    "scripts": {
+        "install-client": "cd client && npm install",
+        "install-server": "cd server && npm install",
+        "install": "npm run install-client && npm run install-server",
+        "client-build": "cd client && npm run build",
+        "server-build": "cd server && npm run build",
+        "build": "npm run client-build && npm run server-build",
+        "start-client": "cd client && npm start",
+        "start-server": "cd server && npm start",
+        "dev": "concurrently \"npm run start-server\" \"npm run start-client\""
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "keywords": ["mern", "bike-rental", "react", "node", "mongodb"],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
